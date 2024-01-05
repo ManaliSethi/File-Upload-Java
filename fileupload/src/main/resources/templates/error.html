@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+    <!-- Add your CSS styles or links here if needed -->
+</head>
+<body>
+<div>
+    <h2>An error occurred</h2>
+    <p>Sorry, something went wrong. Please try again later.</p>
+    <!-- Customize the error message based on your requirements -->
+    <p th:text="${error.message}"></p>
+    <!-- You can include more information about the error if needed -->
+    <!-- For example: <p>Error details: <span th:text="${error.details}"></span></p> -->
+</div>
+<!-- Add your HTML content or structure here -->
+</body>
+</html>
